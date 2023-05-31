@@ -1,0 +1,34 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/update-product.js"></script>
+  </head>
+  <body>
+    <h1>Uppdatera produkt</h1>
+
+    <div id="update-product-form">
+      <div>
+        <label>Titel:</label>
+        <input type="text" id="title" name="title" required />
+      </div>
+      <div>
+        <label>Beskrivning:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <div>
+        <label>Pris:</label>
+        <input type="number" id="price" name="price" required />
+      </div>
+      <div>
+        <label>Lager:</label>
+        <input type="number" id="stock" name="stock" required />
+      </div>
+      <button onClick="updateProduct()">Uppdatera produkt</button>
+      <a href="manage-products.html">Tillbaka</a>
+    </div>
+  </body>
+</html>
